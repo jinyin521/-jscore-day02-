@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str="you can you up";
+        var str=str.replace(
+            /\b[a-z]/g,
+            function(kepword){
+                return kepword.toUpperCase();
+            }
+        )
+        document.write(str);
+
+        var str1="what is this ?";
+        var str1=str1.replace(
+            /\b[a-z]/g,
+            function(upper){
+                return upper.toUpperCase();
+            }
+        )
+        document.write(str1);
+    </script>
+</body>
+</html>

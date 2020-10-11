@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var reg="小名 小猴 小鱼 网通理他 滴滴涕 小偷";
+        var i=reg.match(/小[\u4e00-\u9fa5]/g)
+        console.log(i);
+        var str=reg.replace(/小[\u4e00-\u9fa5]/g,"**")
+        document.write(str);
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var input=prompt("请输入消息内容");
+        var arr=input.match(/([卧窝我]|cao)\s*([草曹槽艹]|cao)/i)
+        if (arr!=null) {
+            document.write(`<h style="color:red">敏感词语${arr[0]}位于${arr.index},禁止发送</h>`)
+        } else {
+            document.write(`<h1 style="green">龟孙说:${input}</h1>`)
+        }
+        // var input=prompt("请输入消息内容");
+        // var arr=input.match(/([我卧]|wo)\s*([草曹艹]|cao)/i);
+        // if (arr!=-1) {
+        //     document.write(`<h  style="color:red">敏感词${arr[0]}位于${arr.index},禁止发送</h>`);
+        // } else {
+        //     document.write(`<h style="colorgreen">龟孙说:${input}</h>`);
+        // }
+
+
+
+    </script>
+</body>
+</html>
